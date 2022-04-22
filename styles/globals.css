@@ -1,0 +1,16 @@
+html {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  justify-content: center;
+  margin: 0;
+}
+
+.g-recaptcha{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}

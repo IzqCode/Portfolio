@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
+
+
+.intro { 
+  display: flex;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  background: url(https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80);
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: rgba(0,0,0,0.08);
+  animation: zoomout 10s ease 500ms infinite;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 70vh;
+}
+
+.hi {
+  font-size: 5vw;
+  align-self: start;
+}
+
+.name {
+  font-size: 9.2vw;
+}
+.skills {
+  font-size: 1.4vw;
+}
+
+.main {
+  height: 70vh;
+  box-sizing: border-box;
+}
+.introduction {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section {
+  min-height: 100vh;
+}
+.sectionmail {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.flexcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectcolor {
+  display: flex;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  background: url(https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80);
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: rgba(0,0,0,0.08);
+  animation: zoomout 10s ease 500ms infinite;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.emailcolor {
+  display: flex;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  background: url(https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80);
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: rgba(0,0,0,0.08);
+  animation: zoomout 10s ease 500ms infinite;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.grid2x2 {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+  gap: 3vh;
+  max-width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+
+.box {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);  
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  background-size: 200% 200%;
+	animation: gradient 15s ease infinite;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20.0px );
+  -webkit-backdrop-filter: blur( 20.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.videobox{
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  height: auto;
+
+}
+
+.video{
+  display: flex;
+  justify-content: center;
+}
+
+.titleproject {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.4vh;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagebox {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  display: flex;
+}
+.tech {
+  font-size: 2vh;
+}
+.flexbuttons{
+  display: flex;
+  flex-direction: row;
+}
+
+@keyframes zoomout {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 40%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+  .grid2x2 {
+     display: block;
+  }
+  .skills{
+    font-size: 3.4vw;
+  }
+  .name{
+    font-size: 12.2vw;
+  }
+  .hi{
+    font-size: 6vw;
+  }
+  .description{
+    font-size: 2vh;
+  }
+  .videobox{
+    max-width: 500px;
+  }
+}
